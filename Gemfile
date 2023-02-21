@@ -72,3 +72,4 @@ group :test do
 end
 
 gem 'pg', '~> 1.1'
+gem 'dotenv-rails'

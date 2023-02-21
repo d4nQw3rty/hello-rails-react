@@ -8,16 +8,15 @@ default: &default
 development:
   <<: *default
   database: hello_rails_react
-  username: danys
-  password: a528603a
+  username: <%= ENV['USERNAME'] %>
+  password: <%= ENV['PASSWORD'] %>
 
 
 test:
   <<: *default
   database: hello_rails_react
-  username: danys
-  password: a528603a
-
+  username: <%= ENV['USERNAME'] %>
+  password: <%= ENV['PASSWORD'] %>
 # As with config/credentials.yml, you never want to store sensitive information,
 #
 production:
