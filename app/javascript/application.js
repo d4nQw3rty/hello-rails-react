@@ -1,9 +1,14 @@
-import "@hotwired/turbo-rails"
-import "./controllers"
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./components/app";
+
+function App() {
+  return (
+    <div>
+      <h1>Hello, world!</h1>
+    </div>
+  );
+}
 
 ReactDOM.render(
   <App/>,
