@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  resources :greetings
+  namespace :api do
+    namespace :v1 do
+      resources :greetings
+    end
+  end
   root 'root#index'
 end
